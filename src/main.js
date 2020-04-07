@@ -2,8 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import XLSX from 'xlsx'
-Vue.use(XLSX)
+import JsonExcel from 'vue-json-excel'
+ 
+Vue.component('downloadExcel', JsonExcel)
+
+
 
 Vue.config.productionTip = false
 
